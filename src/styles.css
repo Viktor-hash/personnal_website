@@ -1,15 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
 }
 
-.home {
-  background-color: #f8f8f8;
-  min-height: 100%;
-  height: auto;
+.About {
+  opacity: 0.7;
+  font-family: "AnonymousPro-Regular", monospace;
+  font-weight: 500;
+  text-transform: uppercase;
+  z-index: 100;
+  letter-spacing: -2px;
+  position: fixed;
+  font-size: 0.6em;
+  top: 35px;
+  right: 80%;
 }
 
-.img_cover {
-  min-height: 100%;
-  height: auto;
+.Work {
+  opacity: 0.7;
+  font-family: "AnonymousPro-Regular", monospace;
+  font-weight: 500;
+  text-transform: uppercase;
+  z-index: 100;
+  letter-spacing: -2px;
+  position: fixed;
+  font-size: 0.6em;
+  top: 35px;
+  right: 46%;
+}
+
+.Contact {
+  opacity: 0.7;
+  font-family: "AnonymousPro-Regular", monospace;
+  font-weight: 500;
+  text-transform: uppercase;
+  z-index: 100;
+  letter-spacing: -2px;
+  position: fixed;
+  font-size: 0.6em;
+  top: 35px;
+  right: 0%;
+}
+
+.Title {
+  opacity: 0.8;
+  font-family: "AnonymousPro-Regular", monospace;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: -4px;
+  font-size: 2.6em;
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.Title:hover {
+  cursor: crosshair;
+}
+
+span {
+  position: relative;
+  display: block;
+}
+
+span:before,
+span:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: black;
+}
+
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: black;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:before {
+  background: black;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.Image {
+  position: absolute;
+  left: 5%;
+  top: 7%;
 }
