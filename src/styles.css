@@ -1,0 +1,15 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.home {
+  background-color: #f8f8f8;
+  min-height: 100%;
+  height: auto;
+}
+
+.img_cover {
+  min-height: 100%;
+  height: auto;
+}
