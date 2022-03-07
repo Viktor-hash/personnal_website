@@ -9,19 +9,20 @@ const Home = () => {
   }, []);
 
   return (
-    <FadeIn>
-      <div className="main">
-        <div className="containerHome">
-          <img className="Image" src={img_cover} alt="" />
-        </div>
-
-        <div className="footer">
-          <div className="container">
-            <p>© Victor Perrault 2022. Currently in Paris</p>
+    <React.Fragment>
+      <FadeIn delay={700}>
+        <div className="main">
+          <div className="containerHome">
+            <img className="Image" src={img_cover} alt="" />
           </div>
         </div>
+      </FadeIn>
+      <div className="footer">
+        <div className="container">
+          <p>© Victor Perrault 2022. Currently in Paris</p>
+        </div>
       </div>
-    </FadeIn>
+    </React.Fragment>
   );
 };
 

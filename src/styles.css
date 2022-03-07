@@ -247,3 +247,24 @@ span:hover:after {
 .Github:hover {
   cursor: crosshair;
 }
+
+.containerAbout {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10rem;
+}
+
+.containerAbout:hover {
+}
+
+.AboutTitle {
+  font-family: arial;
+  font-size: 2.7rem;
+  text-transform: lowercase;
+  font-weight: 900;
+  letter-spacing: -10;
+  margin-bottom: 0;
+}
