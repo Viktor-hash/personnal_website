@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-hmtl {
+html {
   font-size: 62.5%;
   overflow-y: scroll !important;
 }
@@ -27,7 +27,6 @@ body {
   display: block;
   height: 105px;
   position: fixed;
-  width: 100%;
   z-index: 1;
 }
 
@@ -36,28 +35,20 @@ body {
   height: 1.5rem;
 }
 
-.nav_list {
-  text-align: center;
-  width: 100%;
-  padding: 0;
-  text-transform: uppercase;
-  margin-top: 1.6rem;
-  font-family: "AnonymousPro-Regular", monospace;
-  font-weight: 900;
-  letter-spacing: 1.3;
-}
-
 .About {
   opacity: 0.7;
   font-family: "AnonymousPro-Regular", monospace;
   z-index: 100;
   font-size: 0.6em;
   color: #343434;
-  position: relative;
+  position: fixed;
   text-decoration: none;
   font-weight: 900;
   letter-spacing: 1.3;
   font-size: 1.4rem;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .About:hover {
   cursor: crosshair;
@@ -69,10 +60,13 @@ body {
   z-index: 100;
   font-size: 1.4rem;
   color: #343434;
-  position: relative;
+  position: fixed;
   text-decoration: none;
   font-weight: 900;
   letter-spacing: 1.3;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .Work:hover {
@@ -86,10 +80,13 @@ body {
   font-size: 0.6em;
   font-size: 1.4rem;
   color: #343434;
-  position: relative;
+  position: fixed;
   text-decoration: none;
   font-weight: 900;
   letter-spacing: 1.3;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .Contact:hover {
@@ -159,7 +156,7 @@ span:hover:after {
   min-height: 400px;
   min-width: 400px;
   position: absolute;
-  left: -20px;
+  left: 70px;
   width: auto;
   z-index: -10;
 }
@@ -207,4 +204,38 @@ span:hover:after {
   font-size: 1.3rem;
   font-weight: 600;
   color: #ffffff;
+}
+
+.linkedinImage {
+  margin: auto;
+  background-color: black;
+}
+
+.socialMedia {
+  display: block;
+  width: 4rem;
+  bottom: 150px;
+  margin-bottom: 8rem;
+  margin-right: 1rem;
+  position: fixed;
+  right: 1rem;
+  z-index: 100;
+  opacity: 0.5;
+}
+
+.Icons {
+  padding: 0;
+  z-index: 100;
+}
+
+.socialMedia .Icons a {
+  display: flex;
+  height: 4rem;
+  overflow: hidden;
+  margin: 1rem 0;
+  z-index: 100;
+}
+
+.Linkedin:hover {
+  cursor: crosshair;
 }
