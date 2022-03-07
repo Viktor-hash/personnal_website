@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background-color: cyan;
+}
+
+*::-moz-selection {
+  background-color: cyan;
+}
+
 html {
   font-size: 62.5%;
   overflow-y: scroll !important;
@@ -12,6 +20,10 @@ body {
   line-height: 1.42857;
   margin: 0;
   overflow-x: hidden;
+}
+
+.div {
+  display: block;
 }
 
 .App {
@@ -122,7 +134,7 @@ span:after {
   content: "";
   position: absolute;
   width: 0%;
-  height: 5px;
+  height: 2px;
   top: 50%;
   margin-top: -0.5px;
   background: black;
@@ -154,15 +166,16 @@ span:hover:after {
   bottom: 15%;
   height: 48vw;
   min-height: 400px;
-  min-width: 400px;
+  min-width: 350px;
   position: absolute;
   left: 70px;
   width: auto;
   z-index: -10;
+  transform: scaleX(-1);
 }
 
 .main {
-  padding-top: 105px;
+  padding-top: 10px;
   margin: 0;
   width: 100%;
 }
@@ -206,11 +219,6 @@ span:hover:after {
   color: #ffffff;
 }
 
-.linkedinImage {
-  margin: auto;
-  background-color: black;
-}
-
 .socialMedia {
   display: block;
   width: 4rem;
@@ -220,7 +228,6 @@ span:hover:after {
   position: fixed;
   right: 1rem;
   z-index: 100;
-  opacity: 0.5;
 }
 
 .Icons {
@@ -236,28 +243,39 @@ span:hover:after {
   z-index: 100;
 }
 
+.Linkedin {
+  opacity: 0.5;
+}
+
 .Linkedin:hover {
   cursor: crosshair;
+  opacity: 1;
+}
+
+.Instagram {
+  opacity: 0.5;
 }
 
 .Instagram:hover {
   cursor: crosshair;
+  opacity: 1;
+}
+
+.Github {
+  opacity: 0.5;
 }
 
 .Github:hover {
   cursor: crosshair;
+  opacity: 1;
 }
 
 .containerAbout {
-  width: 1170px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 500px;
   margin-bottom: 10rem;
-}
-
-.containerAbout:hover {
 }
 
 .AboutTitle {
@@ -267,4 +285,24 @@ span:hover:after {
   font-weight: 900;
   letter-spacing: -10;
   margin-bottom: 0;
+}
+
+.content {
+  padding: 4.5rem 0;
+}
+
+.about_content {
+  padding: 0;
+  font-size: 1.4rem;
+  font-family: "PlayfairDisplay";
+  line-height: 1.42857;
+}
+
+.p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 0 0 10px;
 }
