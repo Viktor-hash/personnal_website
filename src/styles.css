@@ -2,53 +2,103 @@
   box-sizing: border-box;
 }
 
+hmtl {
+  font-size: 62.5%;
+  overflow-y: scroll !important;
+}
+
+body {
+  font-family: "PlayfairDisplay";
+  line-height: 1.42857;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .App {
-  font-family: sans-serif;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 8rem;
+}
+
+.nav {
+  display: block;
+  height: 105px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav_header {
+  display: block;
+  height: 1.5rem;
+}
+
+.nav_list {
   text-align: center;
+  width: 100%;
+  padding: 0;
+  text-transform: uppercase;
+  margin-top: 1.6rem;
+  font-family: "AnonymousPro-Regular", monospace;
+  font-weight: 900;
+  letter-spacing: 1.3;
 }
 
 .About {
   opacity: 0.7;
   font-family: "AnonymousPro-Regular", monospace;
-  font-weight: 500;
-  text-transform: uppercase;
   z-index: 100;
-  letter-spacing: -2px;
-  position: fixed;
   font-size: 0.6em;
-  top: 35px;
-  right: 80%;
+  color: #343434;
+  position: relative;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 1.3;
+  font-size: 1.4rem;
+}
+.About:hover {
+  cursor: crosshair;
 }
 
 .Work {
   opacity: 0.7;
   font-family: "AnonymousPro-Regular", monospace;
-  font-weight: 500;
-  text-transform: uppercase;
   z-index: 100;
-  letter-spacing: -2px;
-  position: fixed;
-  font-size: 0.6em;
-  top: 35px;
-  right: 46%;
+  font-size: 1.4rem;
+  color: #343434;
+  position: relative;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 1.3;
+}
+
+.Work:hover {
+  cursor: crosshair;
 }
 
 .Contact {
   opacity: 0.7;
   font-family: "AnonymousPro-Regular", monospace;
-  font-weight: 500;
-  text-transform: uppercase;
   z-index: 100;
-  letter-spacing: -2px;
-  position: fixed;
   font-size: 0.6em;
-  top: 35px;
-  right: 0%;
+  font-size: 1.4rem;
+  color: #343434;
+  position: relative;
+  text-decoration: none;
+  font-weight: 900;
+  letter-spacing: 1.3;
+}
+
+.Contact:hover {
+  cursor: crosshair;
 }
 
 .Title {
   opacity: 0.8;
-  font-family: "AnonymousPro-Regular", monospace;
+  font-family: "arial";
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: -4px;
@@ -103,7 +153,58 @@ span:hover:after {
 }
 
 .Image {
+  display: block;
+  bottom: 15%;
+  height: 48vw;
+  min-height: 400px;
+  min-width: 400px;
   position: absolute;
-  left: 5%;
-  top: 7%;
+  left: -20px;
+  width: auto;
+  z-index: -10;
+}
+
+.main {
+  padding-top: 105px;
+  margin: 0;
+  width: 100%;
+}
+
+.containerHome {
+  width: 970px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 85vh;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  line-height: 6rem;
+  background-color: #343434;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1170px;
+}
+
+.footer .container p {
+  font-family: "arial";
+  letter-spacing: -0.5;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
 }
