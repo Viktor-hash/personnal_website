@@ -18,6 +18,10 @@ const NavBar = () => {
     navigate("/contact");
   };
 
+  const OnWorkClicked = () => {
+    navigate("/work");
+  };
+
   return (
     <FadeIn>
       <div className="nav_header">
@@ -28,7 +32,7 @@ const NavBar = () => {
       <h2 className="About" onClick={OnAboutClicked}>
         <span>ABOUT</span>
       </h2>
-      <h2 className="Work" onClick={OnTitleClicked}>
+      <h2 className="Work" onClick={OnWorkClicked}>
         <span>WORK</span>
       </h2>
       <h2 className="Contact" onClick={OnContactClicked}>

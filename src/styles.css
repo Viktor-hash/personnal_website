@@ -307,6 +307,7 @@ span:hover:after {
   font-size: 1.7rem;
   font-family: "PlayfairDisplay";
   line-height: 1.42857;
+  letter-spacing: -0.5px;
 }
 
 .p {
@@ -352,4 +353,15 @@ span:hover:after {
   display: inline;
   font-size: 1.75rem;
   letter-spacing: -1px;
+}
+
+.Works_project_link {
+  opacity: 1;
+  font-family: "PlayfairDisplay", monospace;
+  font-size: 1.75rem;
+}
+
+.Works_project_link:hover {
+  cursor: crosshair;
+  opacity: 0.8;
 }
