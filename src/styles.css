@@ -125,16 +125,18 @@ body {
 }
 
 span {
+  z-index: -10;
   position: relative;
   display: block;
 }
 
 span:before,
 span:after {
+  z-index: -10;
   content: "";
   position: absolute;
   width: 0%;
-  height: 2px;
+  height: 1px;
   top: 50%;
   margin-top: -0.5px;
   background: black;
@@ -162,9 +164,10 @@ span:hover:after {
 }
 
 .Image {
+  opacity: 0.9;
   display: block;
   bottom: 15%;
-  height: 48vw;
+  height: 38vw;
   min-height: 400px;
   min-width: 350px;
   position: absolute;
@@ -273,14 +276,22 @@ span:hover:after {
 .containerAbout {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 500px;
+  padding-left: 10%;
+  padding-right: 35%;
+  margin-bottom: 10rem;
+}
+
+.containerContact {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10%;
+  padding-right: 10%;
   margin-bottom: 10rem;
 }
 
 .AboutTitle {
-  font-family: arial;
-  font-size: 2.7rem;
+  font-family: "arial";
+  font-size: 3rem;
   text-transform: lowercase;
   font-weight: 900;
   letter-spacing: -10;
@@ -293,7 +304,7 @@ span:hover:after {
 
 .about_content {
   padding: 0;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-family: "PlayfairDisplay";
   line-height: 1.42857;
 }
@@ -305,4 +316,40 @@ span:hover:after {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   margin: 0 0 10px;
+}
+
+.workTitle {
+  opacity: 1;
+  display: inline-block;
+}
+
+.workTitle:hover {
+  cursor: crosshair;
+  opacity: 0.8;
+}
+
+.list_work {
+  font-family: "PlayfairDisplay", monospace;
+  display: inline;
+  font-size: 1.75rem;
+  letter-spacing: -1px;
+}
+
+.Contact_links {
+  opacity: 1;
+  display: inline-block;
+  font-family: "PlayfairDisplay", monospace;
+  font-size: 1.75rem;
+}
+
+.Contact_links:hover {
+  cursor: crosshair;
+  opacity: 0.8;
+}
+
+.Contact_text {
+  font-family: "PlayfairDisplay", monospace;
+  display: inline;
+  font-size: 1.75rem;
+  letter-spacing: -1px;
 }
