@@ -1,11 +1,11 @@
-import img_cover from "./portrait_website.jpg";
+import img_cover from "./practice.jpg";
 
 import FadeIn from "react-fade-in";
 import React from "react";
 
 const Home = () => {
   React.useEffect(() => {
-    document.body.style.backgroundColor = "#e7e7e7";
+    document.body.style.backgroundColor = "#f2e9ea";
   }, []);
 
   return (

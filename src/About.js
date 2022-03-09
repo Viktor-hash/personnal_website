@@ -2,10 +2,6 @@ import React from "react";
 import FadeIn from "react-fade-in";
 
 const About = () => {
-  React.useEffect(() => {
-    document.body.style.backgroundColor = "#e7e7e7";
-  }, []);
-
   const OnCEAClicked = () => {
     window.location.assign("https://www.cea.fr/");
   };

@@ -23,6 +23,7 @@ export default function App() {
               <Route path="projects" element={<Projects />} />
               <Route path="drawings" element={<Drawings />} />
             </Route>
+            <Route path="*" element={<Home />} />
           </Routes>
         </div>
       </div>
