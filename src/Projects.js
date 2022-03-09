@@ -1,3 +1,3 @@
-export default function App() {
+export default function Projects() {
   return <p>Hello</p>;
 }

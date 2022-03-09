@@ -1,8 +1,8 @@
 import FadeIn from "react-fade-in";
 import React from "react";
-import img_linkedin from "../icons/linkedin.png";
-import img_instagram from "../icons/instagram.png";
-import img_github from "../icons/github.png";
+import img_linkedin from "./linkedin.png";
+import img_instagram from "./instagram.png";
+import img_github from "./github.png";
 import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {

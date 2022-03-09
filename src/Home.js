@@ -1,4 +1,4 @@
-import img_cover from "../images/portrait_website.jpg";
+import img_cover from "./portrait_website.jpg";
 
 import FadeIn from "react-fade-in";
 import React from "react";

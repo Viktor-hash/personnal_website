@@ -6,6 +6,7 @@ import NavBar from "./NavBar";
 import Contact from "./Contact";
 import Work from "./Work";
 import Projects from "./Projects";
+import Drawings from "./Drawings";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="/work" element={<Work />}>
               <Route index element={<Projects />} />
               <Route path="projects" element={<Projects />} />
+              <Route path="drawings" element={<Drawings />} />
             </Route>
           </Routes>
         </div>

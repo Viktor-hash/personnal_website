@@ -164,7 +164,7 @@ span:hover:after {
 }
 
 .Image {
-  opacity: 0.9;
+  opacity: 1;
   display: block;
   bottom: 15%;
   height: 38vw;
